@@ -8,7 +8,6 @@ use Composer\IO\IOInterface;
 use Composer\Installer\PackageEvent;
 use Composer\Installer\PackageEvents;
 use Composer\Plugin\Capable;
-use Composer\Plugin\Capability\CommandProvider;
 use Composer\Plugin\CommandEvent;
 use Composer\Plugin\PluginInterface;
 use Composer\Plugin\PluginEvents;
@@ -42,7 +41,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface, Capable {
    * {@inheritdoc}
    */
   public function getCapabilities() {
-    return [CommandProvider::class => ScaffoldCommandProvider::class];
+    return ['Composer\Plugin\Capability\CommandProvider' => ScaffoldCommandProvider::class];
   }
 
   /**
