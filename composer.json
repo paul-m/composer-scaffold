@@ -4,8 +4,8 @@
   "type": "composer-plugin",
   "license": "GPL-2.0-or-later",
   "require": {
-    "php": ">=7.0.8",
-    "composer-plugin-api": "^1.0.0"
+    "composer-plugin-api": "^1.0.0",
+    "php": ">=7.0.8"
   },
   "autoload": {
     "psr-4": {
@@ -33,11 +33,10 @@
     ]
   },
   "config": {
-    "optimize-autoloader": true,
     "sort-packages": true
   },
   "require-dev": {
-    "composer/composer": "dev-master",
+    "composer/composer": "^1.8@stable",
     "drupal/coder": "^8.3.2",
     "phpunit/phpunit": "^6.5"
   }
