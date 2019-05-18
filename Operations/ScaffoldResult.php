@@ -1,8 +1,8 @@
 <?php
 
-namespace Drupal\ComposerScaffold\Operations;
+namespace Drupal\Component\Scaffold\Operations;
 
-use Drupal\ComposerScaffold\ScaffoldFilePath;
+use Drupal\Component\Scaffold\ScaffoldFilePath;
 
 /**
  * Record the result of a scaffold operation.
@@ -14,7 +14,7 @@ class ScaffoldResult {
   /**
    * ScaffoldResult constructor.
    *
-   * @param \Drupal\ComposerScaffold\ScaffoldFilePath $destination
+   * @param \Drupal\Component\Scaffold\ScaffoldFilePath $destination
    *   The path to the scaffold file that was processed.
    */
   public function __construct(ScaffoldFilePath $destination) {
@@ -48,7 +48,7 @@ class ScaffoldResult {
   /**
    * The destination scaffold file that this result refers to.
    *
-   * @return \Drupal\ComposerScaffold\ScaffoldFilePath
+   * @return \Drupal\Component\Scaffold\ScaffoldFilePath
    *   The destination path for the scaffold result.
    */
   public function destination() {

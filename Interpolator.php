@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ComposerScaffold;
+namespace Drupal\Component\Scaffold;
 
 /**
  * Inject config values from an associative array into a string.

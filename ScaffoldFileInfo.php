@@ -1,9 +1,9 @@
 <?php
 
-namespace Drupal\ComposerScaffold;
+namespace Drupal\Component\Scaffold;
 
 use Composer\IO\IOInterface;
-use Drupal\ComposerScaffold\Operations\OperationInterface;
+use Drupal\Component\Scaffold\Operations\OperationInterface;
 
 /**
  * Data object that keeps track of one scaffold file.
@@ -21,7 +21,7 @@ class ScaffoldFileInfo {
   /**
    * Set the Scaffold operation.
    *
-   * @param \Drupal\ComposerScaffold\Operations\OperationInterface $op
+   * @param \Drupal\Component\Scaffold\Operations\OperationInterface $op
    *   Operations object that will handle scaffolding operations.
    *
    * @return $this
@@ -34,7 +34,7 @@ class ScaffoldFileInfo {
   /**
    * Get the Scaffold operation.
    *
-   * @return \Drupal\ComposerScaffold\Operations\OperationInterface
+   * @return \Drupal\Component\Scaffold\Operations\OperationInterface
    *   Operations object that handles scaffolding (copy, make symlink, etc).
    */
   public function op() {
@@ -54,7 +54,7 @@ class ScaffoldFileInfo {
   /**
    * Set the relative path to the destination.
    *
-   * @param \Drupal\ComposerScaffold\Operations\ScaffoldFilePath $destination
+   * @param \Drupal\Component\Scaffold\Operations\ScaffoldFilePath $destination
    *   The full and relative paths to the destination file and the package defining it.
    *
    * @return $this
@@ -67,7 +67,7 @@ class ScaffoldFileInfo {
   /**
    * Get the destination.
    *
-   * @return \Drupal\ComposerScaffold\ScaffoldFilePath
+   * @return \Drupal\Component\Scaffold\ScaffoldFilePath
    *   The scaffold path to the destination file.
    */
   public function destination() {

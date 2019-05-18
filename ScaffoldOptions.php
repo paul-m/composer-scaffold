@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ComposerScaffold;
+namespace Drupal\Component\Scaffold;
 
 /**
  * Per-project options from the 'extras' section of the composer.json file.

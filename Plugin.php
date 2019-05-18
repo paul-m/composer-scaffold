@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ComposerScaffold;
+namespace Drupal\Component\Scaffold;
 
 use Composer\Composer;
 use Composer\EventDispatcher\EventSubscriberInterface;
@@ -13,7 +13,7 @@ use Composer\Plugin\PluginInterface;
 use Composer\Plugin\PluginEvents;
 use Composer\Script\Event;
 use Composer\Script\ScriptEvents;
-use Drupal\ComposerScaffold\CommandProvider as ScaffoldCommandProvider;
+use Drupal\Component\Scaffold\CommandProvider as ScaffoldCommandProvider;
 
 /**
  * Composer plugin for handling drupal scaffold.
@@ -22,7 +22,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface, Capable {
   /**
    * The Composer Scaffold handler.
    *
-   * @var \Drupal\ComposerScaffold\Handler
+   * @var \Drupal\Component\Scaffold\Handler
    */
   protected $handler;
 

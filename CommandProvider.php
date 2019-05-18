@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ComposerScaffold;
+namespace Drupal\Component\Scaffold;
 
 use Composer\Plugin\Capability\CommandProvider as CommandProviderCapability;
 

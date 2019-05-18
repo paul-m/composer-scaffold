@@ -1,10 +1,10 @@
 <?php
 
-namespace Drupal\ComposerScaffold\Operations;
+namespace Drupal\Component\Scaffold\Operations;
 
 use Composer\IO\IOInterface;
-use Drupal\ComposerScaffold\ScaffoldFilePath;
-use Drupal\ComposerScaffold\ScaffoldOptions;
+use Drupal\Component\Scaffold\ScaffoldFilePath;
+use Drupal\Component\Scaffold\ScaffoldOptions;
 
 /**
  * Data file that keeps track of one scaffold file's source, destination, and package.
@@ -14,11 +14,11 @@ interface OperationInterface {
   /**
    * Process this scaffold operation.
    *
-   * @param \Drupal\ComposerScaffold\ScaffoldFilePath $destination
+   * @param \Drupal\Component\Scaffold\ScaffoldFilePath $destination
    *   Scaffold file's destination path.
    * @param \Composer\IO\IOInterface $io
    *   IOInterface to writing to.
-   * @param \Drupal\ComposerScaffold\ScaffoldOptions $options
+   * @param \Drupal\Component\Scaffold\ScaffoldOptions $options
    *   Various options that may alter the behavior of the operation.
    *
    * @return ScaffoldResult

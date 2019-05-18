@@ -11,16 +11,16 @@
   },
   "autoload": {
     "psr-4": {
-      "Drupal\\ComposerScaffold\\": ""
+      "Drupal\\Component\\Scaffold\\": ""
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Drupal\\ComposerScaffold\\Tests\\": "tests/src"
+      "Drupal\\Tests\\Component\\Scaffold\\": "tests/src"
     }
   },
   "extra": {
-    "class": "Drupal\\ComposerScaffold\\Plugin",
+    "class": "Drupal\\Component\\Scaffold\\Plugin",
     "branch-alias": {
       "dev-master": "1.0.x-dev"
     }

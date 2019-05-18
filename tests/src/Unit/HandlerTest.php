@@ -1,15 +1,15 @@
 <?php
 
-namespace Drupal\ComposerScaffold\Tests\Unit;
+namespace Drupal\Tests\Component\Scaffold\Unit;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Package\PackageInterface;
-use Drupal\ComposerScaffold\Handler;
+use Drupal\Component\Scaffold\Handler;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @coversDefaultClass \Drupal\ComposerScaffold\Handler
+ * @coversDefaultClass \Drupal\Component\Scaffold\Handler
  *
  * @group Scaffold
  */

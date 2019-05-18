@@ -1,9 +1,9 @@
 <?php
 
-namespace Drupal\ComposerScaffold;
+namespace Drupal\Component\Scaffold;
 
 use Symfony\Component\Filesystem\Filesystem as SymfonyFilesystem;
-use Drupal\ComposerScaffold\Operations\ScaffoldResult;
+use Drupal\Component\Scaffold\Operations\ScaffoldResult;
 
 /**
  * Generates an 'autoload.php' that includes the autoloader created by Composer.
@@ -28,10 +28,10 @@ class GenerateAutoloadReferenceFile {
    * Composer generated. Drupal does this so that it can guarentee that there
    * will always be an `autoload.php` file in a well-known location.
    *
-   * @param \Drupal\ComposerScaffold\ScaffoldFilePath $autoloadPath
+   * @param \Drupal\Component\Scaffold\ScaffoldFilePath $autoloadPath
    *   Where to write the autoload file.
    *
-   * @return \Drupal\ComposerScaffold\Operations\ScaffoldResult
+   * @return \Drupal\Component\Scaffold\Operations\ScaffoldResult
    *   The result of the autoload file generation
    */
   public function generateAutoload(ScaffoldFilePath $autoloadPath) {

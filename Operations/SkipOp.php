@@ -1,10 +1,10 @@
 <?php
 
-namespace Drupal\ComposerScaffold\Operations;
+namespace Drupal\Component\Scaffold\Operations;
 
 use Composer\IO\IOInterface;
-use Drupal\ComposerScaffold\ScaffoldFilePath;
-use Drupal\ComposerScaffold\ScaffoldOptions;
+use Drupal\Component\Scaffold\ScaffoldFilePath;
+use Drupal\Component\Scaffold\ScaffoldOptions;
 
 /**
  * Scaffold operation to skip a scaffold file (do nothing).

@@ -1,11 +1,11 @@
 <?php
 
-namespace Drupal\ComposerScaffold\Tests\Functional;
+namespace Drupal\Tests\Component\Scaffold\Functional;
 
 use Composer\Util\Filesystem;
-use Drupal\ComposerScaffold\Tests\AssertUtilsTrait;
-use Drupal\ComposerScaffold\Tests\ExecTrait;
-use Drupal\ComposerScaffold\Tests\Fixtures;
+use Drupal\Tests\Component\Scaffold\AssertUtilsTrait;
+use Drupal\Tests\Component\Scaffold\ExecTrait;
+use Drupal\Tests\Component\Scaffold\Fixtures;
 use PHPUnit\Framework\TestCase;
 
 /**

@@ -1,11 +1,11 @@
 <?php
 
-namespace Drupal\ComposerScaffold\Operations;
+namespace Drupal\Component\Scaffold\Operations;
 
 use Composer\Composer;
 use Composer\Package\PackageInterface;
-use Drupal\ComposerScaffold\ScaffoldFilePath;
-use Drupal\ComposerScaffold\ScaffoldOptions;
+use Drupal\Component\Scaffold\ScaffoldFilePath;
+use Drupal\Component\Scaffold\ScaffoldOptions;
 
 /**
  * Create Scaffold operation objects based on provided metadata.
@@ -74,10 +74,10 @@ class OperationFactory {
    *   The destination path for the scaffold file. Used only for error messages.
    * @param mixed $value
    *   The metadata for this operation object, which varies by operation type.
-   * @param \Drupal\ComposerScaffold\ScaffoldOptions $options
+   * @param \Drupal\Component\Scaffold\ScaffoldOptions $options
    *   Configuration options from the top-level composer.json file.
    *
-   * @return \Drupal\ComposerScaffold\Operations\OperationInterface
+   * @return \Drupal\Component\Scaffold\Operations\OperationInterface
    *   The scaffolding operation object (skip, replace, etc.)
    */
   public function createScaffoldOp(PackageInterface $package, $dest_rel_path, $value, ScaffoldOptions $options) {
@@ -105,10 +105,10 @@ class OperationFactory {
    *   The destination path for the scaffold file. Used only for error messages.
    * @param array $metadata
    *   The metadata for this operation object, i.e. the relative 'path'.
-   * @param \Drupal\ComposerScaffold\ScaffoldOptions $options
+   * @param \Drupal\Component\Scaffold\ScaffoldOptions $options
    *   Configuration options from the top-level composer.json file.
    *
-   * @return \Drupal\ComposerScaffold\Operations\OperationInterface
+   * @return \Drupal\Component\Scaffold\Operations\OperationInterface
    *   A scaffold replace operation obejct.
    */
   protected function createReplaceOp(PackageInterface $package, $dest_rel_path, array $metadata, ScaffoldOptions $options) {
@@ -134,10 +134,10 @@ class OperationFactory {
    *   The destination path for the scaffold file. Used only for error messages.
    * @param array $metadata
    *   The metadata for this operation object, i.e. the relative 'path'.
-   * @param \Drupal\ComposerScaffold\ScaffoldOptions $options
+   * @param \Drupal\Component\Scaffold\ScaffoldOptions $options
    *   Configuration options from the top-level composer.json file.
    *
-   * @return \Drupal\ComposerScaffold\Operations\OperationInterface
+   * @return \Drupal\Component\Scaffold\Operations\OperationInterface
    *   A scaffold replace operation obejct.
    */
   protected function createAppendOp(PackageInterface $package, $dest_rel_path, array $metadata, ScaffoldOptions $options) {

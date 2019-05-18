@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ComposerScaffold\Operations;
+namespace Drupal\Component\Scaffold\Operations;
 
 /**
  * Use OriginalOpAwareTrait to be informed of any op at the same destination path.

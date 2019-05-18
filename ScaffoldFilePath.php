@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ComposerScaffold;
+namespace Drupal\Component\Scaffold;
 
 /**
  * Manage the path to a file to scaffold.
@@ -113,7 +113,7 @@ class ScaffoldFilePath {
    *   The name of the package defining the destination path.
    * @param string $destination
    *   The relative path to the destination file being scaffolded.
-   * @param \Drupal\ComposerScaffold\Interpolator $locationReplacements
+   * @param \Drupal\Component\Scaffold\Interpolator $locationReplacements
    *   Interpolator that includes the [web-root] and any other available
    *   placeholder replacements.
    *
@@ -146,7 +146,7 @@ class ScaffoldFilePath {
   /**
    * Add data about the relative and full path to this item to the provided interpolator.
    *
-   * @param \Drupal\ComposerScaffold\Interpolator $interpolator
+   * @param \Drupal\Component\Scaffold\Interpolator $interpolator
    *   Interpolator to add data to.
    * @param string $namePrefix
    *   Prefix to add before -rel-path and -full-path item names. Defaults to path type.
@@ -169,7 +169,7 @@ class ScaffoldFilePath {
    * @param string $namePrefix
    *   Prefix to add before -rel-path and -full-path item names. Defaults to path type.
    *
-   * @return \Drupal\ComposerScaffold\Interpolator
+   * @return \Drupal\Component\Scaffold\Interpolator
    *   An interpolator for making string replacements.
    */
   public function getInterpolator($namePrefix = '') {

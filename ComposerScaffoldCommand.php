@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ComposerScaffold;
+namespace Drupal\Component\Scaffold;
 
 use Composer\Command\BaseCommand;
 use Symfony\Component\Console\Input\InputInterface;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ComposerScaffold\Tests;
+namespace Drupal\Tests\Component\Scaffold;
 
 /**
  * Convenience class for creating fixtures.
