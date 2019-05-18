@@ -3,11 +3,8 @@
 namespace Grasmash\ComposerScaffold;
 
 use Composer\Composer;
-use Composer\IO\IOInterface;
 use Composer\Package\PackageInterface;
 use Composer\Util\Filesystem;
-use Grasmash\ComposerScaffold\Operations\OperationInterface;
-use Grasmash\ComposerScaffold\ScaffoldFilePath;
 
 /**
  * Per-project options from the 'extras' section of the composer.json file.

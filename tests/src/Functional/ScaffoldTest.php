@@ -3,12 +3,9 @@
 namespace Grasmash\ComposerScaffold\Tests\Functional;
 
 use Composer\Util\Filesystem;
-use Grasmash\ComposerScaffold\Handler;
-use Grasmash\ComposerScaffold\Interpolator;
 use Grasmash\ComposerScaffold\Tests\Fixtures;
 use Grasmash\ComposerScaffold\Tests\AssertUtilsTrait;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Process\Process;
 
 /**
  * Tests Composer Scaffold.
@@ -88,8 +85,8 @@ class ScaffoldTest extends TestCase {
       [
         'drupal-drupal-missing-scaffold-file',
         'Scaffold file assets/missing-robots-default.txt not found in package fixtures/drupal-drupal-missing-scaffold-file.',
-        TRUE
-      ]
+        TRUE,
+      ],
     ];
   }
 
@@ -115,28 +112,28 @@ class ScaffoldTest extends TestCase {
     return [
       [
         'drupal-composer-drupal-project',
-        'assertDrupalProjectSutWasScaffolded', TRUE
+        'assertDrupalProjectSutWasScaffolded', TRUE,
       ],
       [
         'drupal-drupal',
         'assertDrupalDrupalSutWasScaffolded',
-        FALSE
+        FALSE,
       ],
       [
         'drupal-drupal-test-overwrite',
         'assertDrupalDrupalFileWasReplaced',
-        FALSE
+        FALSE,
       ],
       [
         'drupal-drupal-test-append',
         'assertDrupalDrupalFileWasAppended',
-        FALSE
+        FALSE,
       ],
       [
         'drupal-drupal-test-append',
         'assertDrupalDrupalFileWasAppended',
-        TRUE
-      ]
+        TRUE,
+      ],
     ];
   }
 

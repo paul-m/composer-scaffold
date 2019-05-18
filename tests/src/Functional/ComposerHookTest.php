@@ -3,13 +3,10 @@
 namespace Grasmash\ComposerScaffold\Tests\Functional;
 
 use Composer\Util\Filesystem;
-use Grasmash\ComposerScaffold\Handler;
-use Grasmash\ComposerScaffold\Interpolator;
 use Grasmash\ComposerScaffold\Tests\AssertUtilsTrait;
 use Grasmash\ComposerScaffold\Tests\ExecTrait;
 use Grasmash\ComposerScaffold\Tests\Fixtures;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Process\Process;
 
 /**
  * Tests Composer Hooks that run scaffold operations.

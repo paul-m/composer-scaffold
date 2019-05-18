@@ -6,17 +6,12 @@ use Composer\Composer;
 use Composer\Console\Application;
 use Composer\Factory;
 use Composer\IO\BufferIO;
-use Composer\IO\IOInterface;
-use Composer\Package\PackageInterface;
 use Composer\Util\Filesystem;
 use Grasmash\ComposerScaffold\Handler;
 use Grasmash\ComposerScaffold\Interpolator;
 use Grasmash\ComposerScaffold\Operations\AppendOp;
 use Grasmash\ComposerScaffold\Operations\ReplaceOp;
 use Grasmash\ComposerScaffold\ScaffoldFilePath;
-use Grasmash\ComposerScaffold\Tests\Fixtures;
-use PHPUnit\Framework\TestCase;
-use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\StringInput;
 use Symfony\Component\Console\Output\BufferedOutput;
 

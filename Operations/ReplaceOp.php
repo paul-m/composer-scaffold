@@ -2,12 +2,10 @@
 
 namespace Grasmash\ComposerScaffold\Operations;
 
-use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Util\Filesystem;
 use Grasmash\ComposerScaffold\ScaffoldFilePath;
 use Grasmash\ComposerScaffold\ScaffoldOptions;
-use Symfony\Component\Filesystem\Filesystem as SymfonyFilesystem;
 
 /**
  * Scaffold operation to copy or symlink from source to destination.

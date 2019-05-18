@@ -2,10 +2,6 @@
 
 namespace Grasmash\ComposerScaffold\Tests\Integration;
 
-use Composer\Composer;
-use Composer\IO\IOInterface;
-use Composer\Package\PackageInterface;
-use Grasmash\ComposerScaffold\Handler;
 use PHPUnit\Framework\TestCase;
 use Grasmash\ComposerScaffold\ScaffoldFileInfo;
 use Grasmash\ComposerScaffold\Tests\Fixtures;
@@ -28,15 +24,15 @@ class OperationCollectionTest extends TestCase {
         '[web-root]/index.php' => $fixtures->replaceOp('drupal-assets-fixture', 'index.php'),
         '[web-root]/.htaccess' => $fixtures->replaceOp('drupal-assets-fixture', '.htaccess'),
         '[web-root]/robots.txt' => $fixtures->replaceOp('drupal-assets-fixture', 'robots.txt'),
-        '[web-root]/sites/default/default.services.yml' => $fixtures->replaceOp('drupal-assets-fixture', 'default.services.yml')
+        '[web-root]/sites/default/default.services.yml' => $fixtures->replaceOp('drupal-assets-fixture', 'default.services.yml'),
       ],
       'fixtures/drupal-profile' => [
-        '[web-root]/sites/default/default.services.yml' => $fixtures->replaceOp('drupal-profile', 'profile.default.services.yml')
+        '[web-root]/sites/default/default.services.yml' => $fixtures->replaceOp('drupal-profile', 'profile.default.services.yml'),
       ],
       'fixtures/drupal-drupal' => [
         '[web-root]/.htaccess' => new SkipOp(),
-        '[web-root]/robots.txt' => $fixtures->appendOp('drupal-drupal-test-append', 'append-to-robots.txt')
-      ]
+        '[web-root]/robots.txt' => $fixtures->appendOp('drupal-drupal-test-append', 'append-to-robots.txt'),
+      ],
     ];
     $sut = new OperationCollection($fixtures->io());
     // Test the system under test.

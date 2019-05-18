@@ -3,9 +3,7 @@
 namespace Grasmash\ComposerScaffold\Operations;
 
 use Composer\Composer;
-use Composer\IO\IOInterface;
 use Composer\Package\PackageInterface;
-use Grasmash\ComposerScaffold\ScaffoldFileInfo;
 use Grasmash\ComposerScaffold\ScaffoldFilePath;
 use Grasmash\ComposerScaffold\ScaffoldOptions;
 

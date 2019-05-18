@@ -3,13 +3,10 @@
 namespace Grasmash\ComposerScaffold\Tests\Functional;
 
 use Composer\Util\Filesystem;
-use Grasmash\ComposerScaffold\Handler;
-use Grasmash\ComposerScaffold\Interpolator;
 use Grasmash\ComposerScaffold\Tests\Fixtures;
 use Grasmash\ComposerScaffold\Tests\AssertUtilsTrait;
 use Grasmash\ComposerScaffold\Tests\ExecTrait;
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Process\Process;
 
 /**
  * Tests to see whether .gitignore files are correctly managed.

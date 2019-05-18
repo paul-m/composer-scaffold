@@ -2,9 +2,7 @@
 
 namespace Grasmash\ComposerScaffold;
 
-use Composer\Util\Filesystem;
 use Symfony\Component\Filesystem\Filesystem as SymfonyFilesystem;
-use Grasmash\ComposerScaffold\ScaffoldFilePath;
 use Grasmash\ComposerScaffold\Operations\ScaffoldResult;
 
 /**

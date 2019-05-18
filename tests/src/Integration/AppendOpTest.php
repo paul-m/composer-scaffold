@@ -2,10 +2,6 @@
 
 namespace Grasmash\ComposerScaffold\Tests\Integration;
 
-use Composer\Composer;
-use Composer\IO\IOInterface;
-use Composer\Package\PackageInterface;
-use Grasmash\ComposerScaffold\Handler;
 use Grasmash\ComposerScaffold\Operations\AppendOp;
 use Grasmash\ComposerScaffold\Operations\ReplaceOp;
 use Grasmash\ComposerScaffold\ScaffoldOptions;

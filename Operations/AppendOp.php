@@ -2,13 +2,10 @@
 
 namespace Grasmash\ComposerScaffold\Operations;
 
-use Composer\Composer;
 use Composer\IO\IOInterface;
-use Composer\Util\Filesystem;
 use Grasmash\ComposerScaffold\Interpolator;
 use Grasmash\ComposerScaffold\ScaffoldFilePath;
 use Grasmash\ComposerScaffold\ScaffoldOptions;
-use Symfony\Component\Filesystem\Filesystem as SymfonyFilesystem;
 
 /**
  * Scaffold operation to add to the beginning and/or end of a scaffold file.

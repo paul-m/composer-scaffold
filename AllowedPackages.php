@@ -5,8 +5,6 @@ namespace Grasmash\ComposerScaffold;
 use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Package\PackageInterface;
-use Grasmash\ComposerScaffold\Operations\OperationInterface;
-use Grasmash\ComposerScaffold\ScaffoldFilePath;
 
 /**
  * Determine recusively which packages have been allowed to scaffold files.

@@ -2,10 +2,6 @@
 
 namespace Grasmash\ComposerScaffold;
 
-use Composer\IO\IOInterface;
-use Grasmash\ComposerScaffold\Operations\OperationInterface;
-use Grasmash\ComposerScaffold\ScaffoldFilePath;
-
 /**
  * Per-project options from the 'extras' section of the composer.json file.
  *
@@ -27,7 +23,7 @@ class ScaffoldOptions {
       "allowed-packages" => [],
       "locations" => [],
       "symlink" => FALSE,
-      "file-mapping" => []
+      "file-mapping" => [],
     ];
   }
 
