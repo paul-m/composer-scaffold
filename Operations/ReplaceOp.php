@@ -1,11 +1,11 @@
 <?php
 
-namespace Grasmash\ComposerScaffold\Operations;
+namespace Drupal\ComposerScaffold\Operations;
 
 use Composer\IO\IOInterface;
 use Composer\Util\Filesystem;
-use Grasmash\ComposerScaffold\ScaffoldFilePath;
-use Grasmash\ComposerScaffold\ScaffoldOptions;
+use Drupal\ComposerScaffold\ScaffoldFilePath;
+use Drupal\ComposerScaffold\ScaffoldOptions;
 
 /**
  * Scaffold operation to copy or symlink from source to destination.
@@ -17,7 +17,7 @@ class ReplaceOp implements OperationInterface {
   /**
    * Set the relative path to the source.
    *
-   * @param \Grasmash\ComposerScaffold\ScaffoldFilePath $sourcePath
+   * @param \Drupal\ComposerScaffold\ScaffoldFilePath $sourcePath
    *   The relative path to the source file.
    *
    * @return $this
@@ -30,7 +30,7 @@ class ReplaceOp implements OperationInterface {
   /**
    * Get the source.
    *
-   * @return \Grasmash\ComposerScaffold\ScaffoldFilePath
+   * @return \Drupal\ComposerScaffold\ScaffoldFilePath
    *   The source file reference object.
    */
   public function getSource() {
@@ -87,11 +87,11 @@ class ReplaceOp implements OperationInterface {
   /**
    * Copy the scaffold file.
    *
-   * @param \Grasmash\ComposerScaffold\ScaffoldFilePath $destination
+   * @param \Drupal\ComposerScaffold\ScaffoldFilePath $destination
    *   Scaffold file to process.
    * @param \Composer\IO\IOInterface $io
    *   IOInterface to writing to.
-   * @param \Grasmash\ComposerScaffold\ScaffoldOptions $options
+   * @param \Drupal\ComposerScaffold\ScaffoldOptions $options
    *   Various options that may alter the behavior of the operation.
    */
   public function copyScaffold(ScaffoldFilePath $destination, IOInterface $io, ScaffoldOptions $options) {
@@ -108,11 +108,11 @@ class ReplaceOp implements OperationInterface {
   /**
    * Symlink the scaffold file.
    *
-   * @param \Grasmash\ComposerScaffold\ScaffoldFilePath $destination
+   * @param \Drupal\ComposerScaffold\ScaffoldFilePath $destination
    *   Scaffold file to process.
    * @param \Composer\IO\IOInterface $io
    *   IOInterface to writing to.
-   * @param \Grasmash\ComposerScaffold\ScaffoldOptions $options
+   * @param \Drupal\ComposerScaffold\ScaffoldOptions $options
    *   Various options that may alter the behavior of the operation.
    */
   public function symlinkScaffold(ScaffoldFilePath $destination, IOInterface $io, ScaffoldOptions $options) {

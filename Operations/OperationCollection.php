@@ -1,12 +1,12 @@
 <?php
 
-namespace Grasmash\ComposerScaffold\Operations;
+namespace Drupal\ComposerScaffold\Operations;
 
 use Composer\IO\IOInterface;
-use Grasmash\ComposerScaffold\Interpolator;
-use Grasmash\ComposerScaffold\ScaffoldFileInfo;
-use Grasmash\ComposerScaffold\ScaffoldFilePath;
-use Grasmash\ComposerScaffold\ScaffoldOptions;
+use Drupal\ComposerScaffold\Interpolator;
+use Drupal\ComposerScaffold\ScaffoldFileInfo;
+use Drupal\ComposerScaffold\ScaffoldFilePath;
+use Drupal\ComposerScaffold\ScaffoldOptions;
 
 /**
  * OperationCollection keeps track of the collection of files to be scaffolded.
@@ -56,7 +56,7 @@ class OperationCollection {
    * this will be the same as $scaffold_file->packageName() unless this scaffold
    * file has been overridden or removed by some other package.
    *
-   * @param \Grasmash\ComposerScaffold\ScaffoldFileInfo $scaffold_file
+   * @param \Drupal\ComposerScaffold\ScaffoldFileInfo $scaffold_file
    *   The scaffold file to use to find a providing package name.
    *
    * @return string
@@ -80,7 +80,7 @@ class OperationCollection {
    * @param array $file_mappings
    *   An multidimensional array of file mappings, as returned by
    *   self::getFileMappingsFromPackages().
-   * @param \Grasmash\ComposerScaffold\Interpolator $locationReplacements
+   * @param \Drupal\ComposerScaffold\Interpolator $locationReplacements
    *   An object with the location mappings (e.g. [web-root]).
    */
   public function coalateScaffoldFiles(array $file_mappings, Interpolator $locationReplacements) {
@@ -107,7 +107,7 @@ class OperationCollection {
   /**
    * Scaffolds the files in our scaffold collection, package-by-package.
    *
-   * @param \Grasmash\ComposerScaffold\ScaffoldOptions $options
+   * @param \Drupal\ComposerScaffold\ScaffoldOptions $options
    *   Configuration options from the top-level composer.json file.
    *
    * @return ScaffoldResult[]

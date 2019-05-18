@@ -22,7 +22,7 @@ explicitly granted that right in the top-level composer.json file. See
 
 ## Usage
 
-Composer-scaffold is used by requiring `grasmash/composer-scaffold` in your
+Composer-scaffold is used by requiring `drupal/core-composer-scaffold` in your
 project, and providing configuration settings in the `extra` section of your
 project's composer.json file. Additional configuration from the composer.jon
 file of your project's dependencies is also consulted in order to scaffold the
@@ -198,9 +198,8 @@ the `overwrite` flag to `false`, as shown in the example below:
 }
 ```
 Note that the `overwrite` directive is intended to be used by starter kits,
-service providers, and so on. Individual Drupal sites should [exclude the file
-by setting its value to false](https://github.com/grasmash/composer-scaffold#excluding-scaffold-files)
-instead.
+service providers, and so on. Individual Drupal sites should exclude the file
+by setting its value to false instead.
 
 ## Specifications
 

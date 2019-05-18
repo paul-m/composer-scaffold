@@ -1,18 +1,20 @@
 <?php
 
-namespace Grasmash\ComposerScaffold;
+namespace Drupal\ComposerScaffold;
 
-use Composer\Script\Event;
 use Composer\Composer;
 use Composer\EventDispatcher\EventSubscriberInterface;
 use Composer\IO\IOInterface;
-use Composer\Plugin\Capable;
-use Composer\Plugin\PluginInterface;
-use Composer\Script\ScriptEvents;
 use Composer\Installer\PackageEvent;
 use Composer\Installer\PackageEvents;
-use Composer\Plugin\PluginEvents;
+use Composer\Plugin\Capable;
+use Composer\Plugin\Capability\CommandProvider;
 use Composer\Plugin\CommandEvent;
+use Composer\Plugin\PluginInterface;
+use Composer\Plugin\PluginEvents;
+use Composer\Script\Event;
+use Composer\Script\ScriptEvents;
+use Drupal\ComposerScaffold\CommandProvider as ScaffoldCommandProvider;
 
 /**
  * Composer plugin for handling drupal scaffold.
@@ -21,7 +23,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface, Capable {
   /**
    * The Composer Scaffold handler.
    *
-   * @var \Grasmash\ComposerScaffold\Handler
+   * @var \Drupal\ComposerScaffold\Handler
    */
   protected $handler;
 
@@ -40,7 +42,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface, Capable {
    * {@inheritdoc}
    */
   public function getCapabilities() {
-    return ['Composer\\Plugin\\Capability\\CommandProvider' => 'Grasmash\\ComposerScaffold\\CommandProvider'];
+    return [CommandProvider::class => ScaffoldCommandProvider::class];
   }
 
   /**

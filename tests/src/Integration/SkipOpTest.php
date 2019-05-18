@@ -1,14 +1,16 @@
 <?php
 
-namespace Grasmash\ComposerScaffold\Tests\Integration;
+namespace Drupal\ComposerScaffold\Tests\Integration;
 
-use Grasmash\ComposerScaffold\Operations\SkipOp;
-use Grasmash\ComposerScaffold\ScaffoldOptions;
-use Grasmash\ComposerScaffold\Tests\Fixtures;
+use Drupal\ComposerScaffold\Operations\SkipOp;
+use Drupal\ComposerScaffold\ScaffoldOptions;
+use Drupal\ComposerScaffold\Tests\Fixtures;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @coversDefaultClass \Grasmash\ComposerScaffold\Operations\SkipOp
+ * @coversDefaultClass \Drupal\ComposerScaffold\Operations\SkipOp
+ *
+ * @group Scaffold
  */
 class SkipOpTest extends TestCase {
 

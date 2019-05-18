@@ -1,6 +1,6 @@
 <?php
 
-namespace Grasmash\ComposerScaffold;
+namespace Drupal\ComposerScaffold;
 
 use Symfony\Component\Process\Process;
 

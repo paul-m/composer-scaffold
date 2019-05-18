@@ -1,15 +1,17 @@
 <?php
 
-namespace Grasmash\ComposerScaffold\Tests\Integration;
+namespace Drupal\ComposerScaffold\Tests\Integration;
 
-use Grasmash\ComposerScaffold\Operations\AppendOp;
-use Grasmash\ComposerScaffold\Operations\ReplaceOp;
-use Grasmash\ComposerScaffold\ScaffoldOptions;
-use Grasmash\ComposerScaffold\Tests\Fixtures;
+use Drupal\ComposerScaffold\Operations\AppendOp;
+use Drupal\ComposerScaffold\Operations\ReplaceOp;
+use Drupal\ComposerScaffold\ScaffoldOptions;
+use Drupal\ComposerScaffold\Tests\Fixtures;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @coversDefaultClass \Grasmash\ComposerScaffold\Operations\AppendOp
+ * @coversDefaultClass \Drupal\ComposerScaffold\Operations\AppendOp
+ *
+ * @group Scaffold
  */
 class AppendOpTest extends TestCase {
 

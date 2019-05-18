@@ -1,9 +1,9 @@
 <?php
 
-namespace Grasmash\ComposerScaffold;
+namespace Drupal\ComposerScaffold;
 
 use Composer\IO\IOInterface;
-use Grasmash\ComposerScaffold\Operations\OperationInterface;
+use Drupal\ComposerScaffold\Operations\OperationInterface;
 
 /**
  * Data object that keeps track of one scaffold file.
@@ -21,7 +21,7 @@ class ScaffoldFileInfo {
   /**
    * Set the Scaffold operation.
    *
-   * @param \Grasmash\ComposerScaffold\Operations\OperationInterface $op
+   * @param \Drupal\ComposerScaffold\Operations\OperationInterface $op
    *   Operations object that will handle scaffolding operations.
    *
    * @return $this
@@ -34,7 +34,7 @@ class ScaffoldFileInfo {
   /**
    * Get the Scaffold operation.
    *
-   * @return \Grasmash\ComposerScaffold\Operations\OperationInterface
+   * @return \Drupal\ComposerScaffold\Operations\OperationInterface
    *   Operations object that handles scaffolding (copy, make symlink, etc).
    */
   public function op() {
@@ -54,7 +54,7 @@ class ScaffoldFileInfo {
   /**
    * Set the relative path to the destination.
    *
-   * @param \Grasmash\ComposerScaffold\Operations\ScaffoldFilePath $destination
+   * @param \Drupal\ComposerScaffold\Operations\ScaffoldFilePath $destination
    *   The full and relative paths to the destination file and the package defining it.
    *
    * @return $this
@@ -67,7 +67,7 @@ class ScaffoldFileInfo {
   /**
    * Get the destination.
    *
-   * @return \Grasmash\ComposerScaffold\ScaffoldFilePath
+   * @return \Drupal\ComposerScaffold\ScaffoldFilePath
    *   The scaffold path to the destination file.
    */
   public function destination() {

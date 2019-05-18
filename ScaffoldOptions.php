@@ -1,6 +1,6 @@
 <?php
 
-namespace Grasmash\ComposerScaffold;
+namespace Drupal\ComposerScaffold;
 
 /**
  * Per-project options from the 'extras' section of the composer.json file.

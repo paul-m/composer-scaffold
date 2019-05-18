@@ -1,6 +1,6 @@
 <?php
 
-namespace Grasmash\ComposerScaffold;
+namespace Drupal\ComposerScaffold;
 
 use Composer\Composer;
 use Composer\Package\PackageInterface;

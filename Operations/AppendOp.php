@@ -1,11 +1,11 @@
 <?php
 
-namespace Grasmash\ComposerScaffold\Operations;
+namespace Drupal\ComposerScaffold\Operations;
 
 use Composer\IO\IOInterface;
-use Grasmash\ComposerScaffold\Interpolator;
-use Grasmash\ComposerScaffold\ScaffoldFilePath;
-use Grasmash\ComposerScaffold\ScaffoldOptions;
+use Drupal\ComposerScaffold\Interpolator;
+use Drupal\ComposerScaffold\ScaffoldFilePath;
+use Drupal\ComposerScaffold\ScaffoldOptions;
 
 /**
  * Scaffold operation to add to the beginning and/or end of a scaffold file.
@@ -18,7 +18,7 @@ class AppendOp implements OperationInterface, OriginalOpAwareInterface {
   /**
    * Set the relative path to the prepend file.
    *
-   * @param \Grasmash\ComposerScaffold\ScaffoldFilePath $prependPath
+   * @param \Drupal\ComposerScaffold\ScaffoldFilePath $prependPath
    *   The relative path to the prepend file file.
    *
    * @return $this
@@ -31,7 +31,7 @@ class AppendOp implements OperationInterface, OriginalOpAwareInterface {
   /**
    * Set the relative path to the append file.
    *
-   * @param \Grasmash\ComposerScaffold\ScaffoldFilePath $appendPath
+   * @param \Drupal\ComposerScaffold\ScaffoldFilePath $appendPath
    *   The relative path to the append file file.
    *
    * @return $this
@@ -44,7 +44,7 @@ class AppendOp implements OperationInterface, OriginalOpAwareInterface {
   /**
    * Add interpolation data for our append and prepend source files.
    *
-   * @param \Grasmash\ComposerScaffold\Interpolator $interpolator
+   * @param \Drupal\ComposerScaffold\Interpolator $interpolator
    *   Interpolator to add data to.
    */
   protected function addInterpolationData(Interpolator $interpolator) {
@@ -93,7 +93,7 @@ class AppendOp implements OperationInterface, OriginalOpAwareInterface {
   /**
    * Do the actuall append / prepend operation for the provided scaffold file.
    *
-   * @param \Grasmash\ComposerScaffold\ScaffoldFilePath $destination
+   * @param \Drupal\ComposerScaffold\ScaffoldFilePath $destination
    *   The scaffold file to append / prepend to.
    * @param string $prependContents
    *   The contents to add to the beginning of the file.

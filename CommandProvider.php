@@ -1,6 +1,6 @@
 <?php
 
-namespace Grasmash\ComposerScaffold;
+namespace Drupal\ComposerScaffold;
 
 use Composer\Plugin\Capability\CommandProvider as CommandProviderCapability;
 

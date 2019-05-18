@@ -1,6 +1,6 @@
 <?php
 
-namespace Grasmash\ComposerScaffold\Operations;
+namespace Drupal\ComposerScaffold\Operations;
 
 /**
  * Use OriginalOpAwareTrait to be informed of any op at the same destination path.

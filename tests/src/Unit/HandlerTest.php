@@ -1,15 +1,17 @@
 <?php
 
-namespace Grasmash\ComposerScaffold\Tests\Unit;
+namespace Drupal\ComposerScaffold\Tests\Unit;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
 use Composer\Package\PackageInterface;
-use Grasmash\ComposerScaffold\Handler;
+use Drupal\ComposerScaffold\Handler;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @coversDefaultClass \Grasmash\ComposerScaffold\Handler
+ * @coversDefaultClass \Drupal\ComposerScaffold\Handler
+ *
+ * @group Scaffold
  */
 class HandlerTest extends TestCase {
   /**

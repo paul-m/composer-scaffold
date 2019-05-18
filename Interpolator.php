@@ -1,6 +1,6 @@
 <?php
 
-namespace Grasmash\ComposerScaffold;
+namespace Drupal\ComposerScaffold;
 
 /**
  * Inject config values from an associative array into a string.

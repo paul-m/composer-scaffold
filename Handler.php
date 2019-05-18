@@ -1,6 +1,6 @@
 <?php
 
-namespace Grasmash\ComposerScaffold;
+namespace Drupal\ComposerScaffold;
 
 use Composer\Composer;
 use Composer\EventDispatcher\EventDispatcher;
@@ -10,8 +10,8 @@ use Composer\Package\PackageInterface;
 use Composer\Plugin\CommandEvent;
 use Composer\Script\Event;
 use Composer\Util\Filesystem;
-use Grasmash\ComposerScaffold\Operations\OperationCollection;
-use Grasmash\ComposerScaffold\Operations\OperationFactory;
+use Drupal\ComposerScaffold\Operations\OperationCollection;
+use Drupal\ComposerScaffold\Operations\OperationFactory;
 
 /**
  * Core class of the plugin.
@@ -97,7 +97,7 @@ class Handler {
    * @param \Composer\Package\PackageInterface $package
    *   The Composer package from which to get the file mappings.
    *
-   * @return \Grasmash\ComposerScaffold\Operations\OperationInterface[]
+   * @return \Drupal\ComposerScaffold\Operations\OperationInterface[]
    *   An array of destination paths => scaffold operation objects.
    */
   public function getPackageFileMappings(PackageInterface $package) {
@@ -121,7 +121,7 @@ class Handler {
    * @param array $package_file_mappings
    *   The package file mappings array (destination path => operation metadata array)
    *
-   * @return \Grasmash\ComposerScaffold\Operations\OperationInterface[]
+   * @return \Drupal\ComposerScaffold\Operations\OperationInterface[]
    *   A list of scaffolding operation objects
    */
   protected function createScaffoldOperations(PackageInterface $package, array $package_file_mappings) {
@@ -205,7 +205,7 @@ class Handler {
    *   A multidimensional array of file mappings, as returned by
    *   self::getAllowedPackages().
    *
-   * @return \Grasmash\ComposerScaffold\Operations\OperationInterface[]
+   * @return \Drupal\ComposerScaffold\Operations\OperationInterface[]
    *   An array of destination paths => scaffold operation objects.
    */
   protected function getFileMappingsFromPackages(array $allowed_packages) {

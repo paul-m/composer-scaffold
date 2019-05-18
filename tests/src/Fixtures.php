@@ -1,17 +1,17 @@
 <?php
 
-namespace Grasmash\ComposerScaffold\Tests;
+namespace Drupal\ComposerScaffold\Tests;
 
 use Composer\Composer;
 use Composer\Console\Application;
 use Composer\Factory;
 use Composer\IO\BufferIO;
 use Composer\Util\Filesystem;
-use Grasmash\ComposerScaffold\Handler;
-use Grasmash\ComposerScaffold\Interpolator;
-use Grasmash\ComposerScaffold\Operations\AppendOp;
-use Grasmash\ComposerScaffold\Operations\ReplaceOp;
-use Grasmash\ComposerScaffold\ScaffoldFilePath;
+use Drupal\ComposerScaffold\Handler;
+use Drupal\ComposerScaffold\Interpolator;
+use Drupal\ComposerScaffold\Operations\AppendOp;
+use Drupal\ComposerScaffold\Operations\ReplaceOp;
+use Drupal\ComposerScaffold\ScaffoldFilePath;
 use Symfony\Component\Console\Input\StringInput;
 use Symfony\Component\Console\Output\BufferedOutput;
 
@@ -122,7 +122,7 @@ class Fixtures {
    * @param string $destination
    *   The path to the destination; only used in error messages, not needed for most tests.
    *
-   * @return \Grasmash\ComposerScaffold\ScaffoldFilePath
+   * @return \Drupal\ComposerScaffold\ScaffoldFilePath
    *   The full and relative path to the desired asset
    */
   public function sourcePath($project_name, $source, $destination = 'unknown') {
@@ -136,7 +136,7 @@ class Fixtures {
   /**
    * Use in place of Handler::getLocationReplacements() to obtain a 'web-root'.
    *
-   * @return \Grasmash\ComposerScaffold\Interpolator
+   * @return \Drupal\ComposerScaffold\Interpolator
    *   An interpolator with location replacements, including 'web-root'.
    */
   public function getLocationReplacements() {
@@ -154,7 +154,7 @@ class Fixtures {
    * @param string $source
    *   The name of the asset; path is "assets/$source".
    *
-   * @return \Grasmash\ComposerScaffold\Operations\ReplaceOp
+   * @return \Drupal\ComposerScaffold\Operations\ReplaceOp
    *   A replace operation object.
    */
   public function replaceOp($project_name, $source) {
@@ -170,7 +170,7 @@ class Fixtures {
    * @param string $source
    *   The name of the asset; path is "assets/$source".
    *
-   * @return \Grasmash\ComposerScaffold\Operations\AppendOp
+   * @return \Drupal\ComposerScaffold\Operations\AppendOp
    *   An append opperation object.
    */
   public function appendOp($project_name, $source) {
@@ -185,14 +185,14 @@ class Fixtures {
    *   Destination path; should be in the form '[web-root]/robots.txt', where
    *   '[web-root]' is always literally '[web-root]', with any arbitrarily
    *   desired filename following.
-   * @param \Grasmash\ComposerScaffold\Interpolator $interpolator
+   * @param \Drupal\ComposerScaffold\Interpolator $interpolator
    *   Location replacements. Obtain via Fixtures::getLocationReplacements()
    *   when creating multiple scaffold destinations.
    * @param string $package_name
    *   The name of the fixture package that this path came from. Optional;
    *   taken from interpolator if not provided.
    *
-   * @return \Grasmash\ComposerScaffold\ScaffoldFilePath
+   * @return \Drupal\ComposerScaffold\ScaffoldFilePath
    *   A destination scaffold file backed by temporary storage.
    */
   public function destinationPath($destination, Interpolator $interpolator = NULL, $package_name = NULL) {

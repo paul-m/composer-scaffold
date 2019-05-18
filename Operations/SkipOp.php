@@ -1,10 +1,10 @@
 <?php
 
-namespace Grasmash\ComposerScaffold\Operations;
+namespace Drupal\ComposerScaffold\Operations;
 
 use Composer\IO\IOInterface;
-use Grasmash\ComposerScaffold\ScaffoldFilePath;
-use Grasmash\ComposerScaffold\ScaffoldOptions;
+use Drupal\ComposerScaffold\ScaffoldFilePath;
+use Drupal\ComposerScaffold\ScaffoldOptions;
 
 /**
  * Scaffold operation to skip a scaffold file (do nothing).

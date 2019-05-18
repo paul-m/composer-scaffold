@@ -1,8 +1,8 @@
 <?php
 
-namespace Grasmash\ComposerScaffold\Operations;
+namespace Drupal\ComposerScaffold\Operations;
 
-use Grasmash\ComposerScaffold\ScaffoldFilePath;
+use Drupal\ComposerScaffold\ScaffoldFilePath;
 
 /**
  * Record the result of a scaffold operation.
@@ -14,7 +14,7 @@ class ScaffoldResult {
   /**
    * ScaffoldResult constructor.
    *
-   * @param \Grasmash\ComposerScaffold\ScaffoldFilePath $destination
+   * @param \Drupal\ComposerScaffold\ScaffoldFilePath $destination
    *   The path to the scaffold file that was processed.
    */
   public function __construct(ScaffoldFilePath $destination) {
@@ -48,7 +48,7 @@ class ScaffoldResult {
   /**
    * The destination scaffold file that this result refers to.
    *
-   * @return \Grasmash\ComposerScaffold\ScaffoldFilePath
+   * @return \Drupal\ComposerScaffold\ScaffoldFilePath
    *   The destination path for the scaffold result.
    */
   public function destination() {

@@ -1,5 +1,5 @@
 {
-  "name": "grasmash/composer-scaffold",
+  "name": "drupal/core-composer-scaffold",
   "description": "A flexible Composer project scaffold builder.",
   "type": "composer-plugin",
   "keywords": ["drupal"],
@@ -11,16 +11,16 @@
   },
   "autoload": {
     "psr-4": {
-      "Grasmash\\ComposerScaffold\\": ""
+      "Drupal\\ComposerScaffold\\": ""
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Grasmash\\ComposerScaffold\\Tests\\": "tests/src"
+      "Drupal\\ComposerScaffold\\Tests\\": "tests/src"
     }
   },
   "extra": {
-    "class": "Grasmash\\ComposerScaffold\\Plugin",
+    "class": "Drupal\\ComposerScaffold\\Plugin",
     "branch-alias": {
       "dev-master": "1.0.x-dev"
     }

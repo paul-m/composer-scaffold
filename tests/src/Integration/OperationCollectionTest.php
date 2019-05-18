@@ -1,15 +1,17 @@
 <?php
 
-namespace Grasmash\ComposerScaffold\Tests\Integration;
+namespace Drupal\ComposerScaffold\Tests\Integration;
 
 use PHPUnit\Framework\TestCase;
-use Grasmash\ComposerScaffold\ScaffoldFileInfo;
-use Grasmash\ComposerScaffold\Tests\Fixtures;
-use Grasmash\ComposerScaffold\Operations\SkipOp;
-use Grasmash\ComposerScaffold\Operations\OperationCollection;
+use Drupal\ComposerScaffold\ScaffoldFileInfo;
+use Drupal\ComposerScaffold\Tests\Fixtures;
+use Drupal\ComposerScaffold\Operations\SkipOp;
+use Drupal\ComposerScaffold\Operations\OperationCollection;
 
 /**
- * @coversDefaultClass \Grasmash\ComposerScaffold\Operations\OperationCollection
+ * @coversDefaultClass \Drupal\ComposerScaffold\Operations\OperationCollection
+ *
+ * @group Scaffold
  */
 class OperationCollectionTest extends TestCase {
 

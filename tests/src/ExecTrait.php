@@ -1,6 +1,6 @@
 <?php
 
-namespace Grasmash\ComposerScaffold\Tests;
+namespace Drupal\ComposerScaffold\Tests;
 
 use Symfony\Component\Process\Process;
 

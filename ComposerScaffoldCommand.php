@@ -1,6 +1,6 @@
 <?php
 
-namespace Grasmash\ComposerScaffold;
+namespace Drupal\ComposerScaffold;
 
 use Composer\Command\BaseCommand;
 use Symfony\Component\Console\Input\InputInterface;

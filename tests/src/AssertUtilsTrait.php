@@ -1,6 +1,6 @@
 <?php
 
-namespace Grasmash\ComposerScaffold\Tests;
+namespace Drupal\ComposerScaffold\Tests;
 
 /**
  * Convenience class for creating fixtures.

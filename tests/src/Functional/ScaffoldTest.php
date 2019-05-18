@@ -1,10 +1,10 @@
 <?php
 
-namespace Grasmash\ComposerScaffold\Tests\Functional;
+namespace Drupal\ComposerScaffold\Tests\Functional;
 
 use Composer\Util\Filesystem;
-use Grasmash\ComposerScaffold\Tests\Fixtures;
-use Grasmash\ComposerScaffold\Tests\AssertUtilsTrait;
+use Drupal\ComposerScaffold\Tests\Fixtures;
+use Drupal\ComposerScaffold\Tests\AssertUtilsTrait;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -12,6 +12,8 @@ use PHPUnit\Framework\TestCase;
  *
  * The purpose of this test file is to exercise all of the different kinds of
  * scaffold operations: copy, symlinks, skips and so on.
+ *
+ * @group Scaffold
  */
 class ScaffoldTest extends TestCase {
   use AssertUtilsTrait;

@@ -1,11 +1,11 @@
 <?php
 
-namespace Grasmash\ComposerScaffold\Tests\Functional;
+namespace Drupal\ComposerScaffold\Tests\Functional;
 
 use Composer\Util\Filesystem;
-use Grasmash\ComposerScaffold\Tests\Fixtures;
-use Grasmash\ComposerScaffold\Tests\AssertUtilsTrait;
-use Grasmash\ComposerScaffold\Tests\ExecTrait;
+use Drupal\ComposerScaffold\Tests\Fixtures;
+use Drupal\ComposerScaffold\Tests\AssertUtilsTrait;
+use Drupal\ComposerScaffold\Tests\ExecTrait;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -14,6 +14,8 @@ use PHPUnit\Framework\TestCase;
  * The purpose of this test file is to run a scaffold operation and
  * confirm that the files that were scaffolded are added to the
  * repository's .gitignore file.
+ *
+ * @group Scaffold
  */
 class ManageGitIgnoreTest extends TestCase {
   use ExecTrait;

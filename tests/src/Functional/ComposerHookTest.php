@@ -1,24 +1,26 @@
 <?php
 
-namespace Grasmash\ComposerScaffold\Tests\Functional;
+namespace Drupal\ComposerScaffold\Tests\Functional;
 
 use Composer\Util\Filesystem;
-use Grasmash\ComposerScaffold\Tests\AssertUtilsTrait;
-use Grasmash\ComposerScaffold\Tests\ExecTrait;
-use Grasmash\ComposerScaffold\Tests\Fixtures;
+use Drupal\ComposerScaffold\Tests\AssertUtilsTrait;
+use Drupal\ComposerScaffold\Tests\ExecTrait;
+use Drupal\ComposerScaffold\Tests\Fixtures;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Tests Composer Hooks that run scaffold operations.
  *
  * The purpose of this test file is to exercise all of the different Composer
- * commands that invoke scaffold operations, and ensure that files are scaffolded
- * when they should be.
+ * commands that invoke scaffold operations, and ensure that files are
+ * scaffolded when they should be.
  *
  * Note that this test file uses `exec` to run Composer for a pure functional
  * test. Other functional test files invoke Composer commands directly via the
  * Composer Application object, in order to get more accurate test coverage
  * information.
+ *
+ * @group Scaffold
  */
 class ComposerHookTest extends TestCase {
   use ExecTrait;
