@@ -4,7 +4,7 @@
   "type": "composer-plugin",
   "license": "GPL-2.0-or-later",
   "require": {
-    "php": ">=5.6",
+    "php": ">=7.0.8",
     "composer-plugin-api": "^1.0.0"
   },
   "autoload": {
@@ -24,26 +24,22 @@
     }
   },
   "scripts": {
-    "cs": "phpcs --standard=Drupal -n src tests",
-    "cbf": "phpcbf --standard=Drupal -n src tests",
+    "phpcs": "phpcs --standard=phpcs.xml.dist --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/drupal/coder/coder_sniffer --",
+    "phpcbf": "phpcbf --standard=phpcs.xml.dist --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/drupal/coder/coder_sniffer --",
     "unit": "phpunit --colors=always",
-    "lint": [
-      "find src tests/src -name '*.php' -print0 | xargs -0 -n1 php -l"
-    ],
     "test": [
-      "@lint",
-      "@unit",
-      "@cs"
+      "@phpcs",
+      "@unit"
     ]
   },
   "config": {
+    "optimize-autoloader": true,
     "sort-packages": true
   },
   "require-dev": {
-    "composer/composer": "^1.8@stable",
-    "phpunit/phpunit": "^4.8.35 || ^6.5",
-    "squizlabs/php_codesniffer": "^3.4.2",
+    "composer/composer": "dev-master",
     "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
-    "drupal/coder": "^8.3.3"
+    "drupal/coder": "^8.3.2",
+    "phpunit/phpunit": "^6.5"
   }
 }

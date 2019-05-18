@@ -5,7 +5,7 @@ matrix:
   include:
   - php: 7.2
     env: OP=install
-  - php: 5.6
+  - php: 7.0.8
     env: OP="update --prefer-lowest"
 
 sudo: false

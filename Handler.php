@@ -12,7 +12,6 @@ use Composer\Script\Event;
 use Composer\Util\Filesystem;
 use Grasmash\ComposerScaffold\Operations\OperationCollection;
 use Grasmash\ComposerScaffold\Operations\OperationFactory;
-use Grasmash\ComposerScaffold\Operations\OperationInterface;
 
 /**
  * Core class of the plugin.

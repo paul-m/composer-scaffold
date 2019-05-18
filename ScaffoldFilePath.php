@@ -2,8 +2,6 @@
 
 namespace Grasmash\ComposerScaffold;
 
-use Grasmash\ComposerScaffold\Interpolator;
-
 /**
  * Manage the path to a file to scaffold.
  *
@@ -160,7 +158,7 @@ class ScaffoldFilePath {
     $data = [
       'package-name' => $this->packageName(),
       "{$namePrefix}-rel-path" => $this->relativePath(),
-      "{$namePrefix}-full-path" => $this->fullPath()
+      "{$namePrefix}-full-path" => $this->fullPath(),
     ];
     $interpolator->addData($data);
   }
