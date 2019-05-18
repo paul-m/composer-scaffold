@@ -9,7 +9,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Grasmash\\ComposerScaffold\\": "src/"
+      "Grasmash\\ComposerScaffold\\": ""
     }
   },
   "autoload-dev": {
@@ -41,8 +41,8 @@
     "sort-packages": true
   },
   "require-dev": {
-    "composer/composer": "dev-master",
-    "phpunit/phpunit": "^5.7.27|^6",
+    "composer/composer": "@stable",
+    "phpunit/phpunit": "^4.8.35 || ^6.5",
     "squizlabs/php_codesniffer": "^3.4.2",
     "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
     "drupal/coder": "^8.3.3"
