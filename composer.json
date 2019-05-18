@@ -1,7 +1,9 @@
 {
   "name": "grasmash/composer-scaffold",
-  "description": "Test for Composer Scaffold.",
+  "description": "A flexible Composer project scaffold builder.",
   "type": "composer-plugin",
+  "keywords": ["drupal"],
+  "homepage": "https://www.drupal.org/project/drupal",
   "license": "GPL-2.0-or-later",
   "require": {
     "composer-plugin-api": "^1.0.0",
