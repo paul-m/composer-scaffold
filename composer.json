@@ -37,11 +37,10 @@
     ]
   },
   "config": {
-    "optimize-autoloader": true,
     "sort-packages": true
   },
   "require-dev": {
-    "composer/composer": "@stable",
+    "composer/composer": "^1.8@stable",
     "phpunit/phpunit": "^4.8.35 || ^6.5",
     "squizlabs/php_codesniffer": "^3.4.2",
     "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
