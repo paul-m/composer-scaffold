@@ -70,6 +70,9 @@ class ManageGitIgnoreTest extends TestCase {
     $this->fixtures->cloneFixtureProjects($this->fixturesDir, $replacements);
     // .gitignore files will not be managed unless there is a git repository.
     $this->mustExec('git init', $sut);
+    // Add some user info so git does not complain.
+    $this->mustExec('git config user.email "test@example.com"', $sut);
+    $this->mustExec('git config user.name "Test User"', $sut);
     $this->mustExec('git add .', $sut);
     $this->mustExec('git commit -m "Initial commit."', $sut);
     // Run composer install, but supress scaffolding.
